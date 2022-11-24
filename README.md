@@ -8,4 +8,6 @@ Ao concluir os modulos do curso da Rocketseat estou colocando em prática todo o
 
 ##### Lembrando que o módelo utilizado para a criação é a versão qeu se encontra no figma e não no notion 
 
+![Home Page](https://github.com/BrandsDeveloper/Rocketseat_Portfolio/blob/main/img/Screenshot_4.png)
+
 > [Clique aqui](https://brandsdeveloper.github.io/Rocketseat_Portfolio/)

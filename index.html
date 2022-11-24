@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+        :root {
+            --body-bg-color: #22212C;
+            --text-color: #837E9F;
+            --bg-cards: #302F3D;
+            --bg-techs: #CB92B1;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Merriweather Sans', sans-serif;
+        }
+
+        body{
+            background: var(--body-bg-color);
+        }
+
+        #container{
+            display: flex;
+            gap: 1rem;
+        }
+        
+        aside, main{
+            padding: 40px 15px;
+        }
+        
+        aside{
+            flex-basis: 25%;
+            border: 1px solid red;
+        }
+        
+        main{
+            flex: 1;
+        }
+
+        main > .bar{
+            width: 952px;
+            height: 86px;
+            background: var(--bg-cards);
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-color);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.459);
+            padding: 0px 25px;
+        }
+        
+        main .bar p:first-child{
+            font-size: 20px;
+            font-weight: 800;
+        }
+        
+        main .bar p{
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        main #proj {
+            display: flex;
+            gap: 2rem;
+            color: var(--text-color);
+        }
+
+        main #proj div.onix{
+            width: 461px;
+            height: 186px;
+            margin: 30px 0px;
+            background: var(--bg-cards);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            color: var(--text-color);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.459);
+            padding: 30px 20px;
+        }
+
+        main #proj .start{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        main #proj .start .align{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        main #proj .start p{
+            font-size: 14px;
+            width: 95%;
+            letter-spacing: 0.5px;
+        }
+
+        main #proj div.onix .end{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        main #proj div.onix .end p{
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        main #proj div.onix .end p:last-child{
+            position: relative;
+            left: 206px;
+        }
+
+        main #recent{
+            width: 952px;
+            height: 201px;
+            margin-top: 30px;
+            background: var(--bg-cards);
+            border-radius: 20px;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            color: var(--text-color);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.459);
+            padding: 0px 25px;
+        }
+
+        main #recent .imagem{
+            width: 128px;
+            height: 128px;
+            border-radius: 100px;
+            background: url(img/eu2.JPG) no-repeat;
+            background-size: 200%;
+            background-position: -55px -10px;
+        }
+
+        main #recent .content{
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+
+        main #recent .inter{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        main #recent .text p{
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        main #recent .text p:last-child{
+            font-size: 14px;
+        }
+
+        main #recent .hashtag{
+            display: flex;
+            gap: 2rem;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section id="container">
+
+        <aside>a</aside>
+
+        <main>
+
+            <div class="bar">
+                <p>My Projects</p>
+                <p>Veja todos</p>
+            </div>
+
+            <div id="proj">
+
+                <div class="onix">
+
+                    <div class="start">
+
+                        <div class="align">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                            <span>my-onix</span>
+                        </div>
+
+                        <p>Consulte os código de erro que aparecem no painel do veículo Onix.</p>
+
+                    </div>
+
+                    <div class="end">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
+
+                        <p>100</p>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-branch">
+                            <line x1="6" y1="3" x2="6" y2="15"></line>
+                            <circle cx="18" cy="6" r="3"></circle>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <path d="M18 9a9 9 0 0 1-9 9"></path>
+                        </svg>
+
+                        <p>100</p>
+                        
+                        <p>JavaScript</p>
+                    </div>
+                    
+                </div>
+
+                <div class="onix">
+
+                    <div class="start">
+
+                        <div class="align">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                            </svg>
+
+                            <span>my-onix</span>
+
+                        </div>
+
+                        <p>Consulte os código de erro que aparecem no painel do veículo Onix.</p>
+
+                    </div>
+
+                    <div class="end">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-star">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
+
+                        <p>100</p>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-git-branch">
+                            <line x1="6" y1="3" x2="6" y2="15"></line>
+                            <circle cx="18" cy="6" r="3"></circle>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <path d="M18 9a9 9 0 0 1-9 9"></path>
+                        </svg>
+
+                        <p>100</p>
+                        
+                        <p>JavaScript</p>
+
+                    </div>
+
+                </div>
+
+                
+                
+            </div>
+
+            <div class="bar two">
+                <p>Recent Posts</p>
+            </div>
+
+            <div id="recent">
+
+                <div class="imagem">
+                </div>
+
+                <div class="content">
+
+                    <div class="inter text">
+                        <p>Erro adb devices no Genymotion e Android Studio (React Native)</p>
+                        <p>2 anos atrás</p>
+                    </div>
+
+                    <div class="inter">
+
+                        <p>Erro adb devices no Genymotion e Android Studio (React Native)</p>
+                    
+                        <div class="hashtag">
+                            <p>#react-native</p>
+                            <p>#genimotion</p>
+                            <p>#genimotion</p>
+                            <p>#genimotion</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </main>
+
+    </section>
+
+</body>
+</html>
